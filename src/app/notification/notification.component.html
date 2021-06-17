@@ -1,0 +1,125 @@
+<app-menu-to-logout></app-menu-to-logout>
+<div class="page">
+    <div class="d-flex p-2 justify-content-center">
+        <img src="assets/img/profile_picture.png">
+    </div>
+    <div class="d-flex">
+        <div class="my-card w-50 mr-3 d-flex p-4">
+            <div class="w-50">
+
+                <mat-list>
+                    <div mat-subheader>Missed</div>
+                    <mat-list-item>
+                        <a mat-list-icon routerLink="/chat"><mat-icon  matBadge="2" matBadgeColor="warn">message</mat-icon></a>
+                        <div mat-line>John Smith</div>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <a mat-list-icon routerLink="/chat"><mat-icon  matBadge="1" matBadgeColor="warn">message</mat-icon></a>
+                        <div mat-line>William Brown</div>
+                    </mat-list-item>
+                </mat-list>
+            </div>
+            <div class="w-50">
+                <mat-list>
+                    <div mat-subheader>Recent</div>
+                    <mat-list-item>
+                        <a mat-list-icon routerLink="/chat"><mat-icon>more_horiz</mat-icon></a>
+                        <div mat-line>John Smith</div>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <a mat-list-icon routerLink="/chat"><mat-icon>more_horiz</mat-icon></a>
+                        <div mat-line>William Brown</div>
+                    </mat-list-item>
+
+                </mat-list>
+            </div>
+        </div>
+        <div class="my-card w-50 p-4">
+            <mat-card-title>Contact requests</mat-card-title>
+            <div class="d-flex">
+                <div class="w-50">
+                    <mat-list>
+                        <div mat-subheader>Patients</div>
+                        <mat-list-item>
+                            <a mat-list-icon><mat-icon >check_circle_outline</mat-icon></a>
+                            <div mat-line>John Smith</div>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <a mat-list-icon><mat-icon>check_circle_outline</mat-icon></a>
+                            <div mat-line>William Brown</div>
+                        </mat-list-item>
+                    </mat-list>
+                </div>
+                <div class="w-50">
+                    <mat-list>
+                        <div mat-subheader>Caregivers</div>
+                        <mat-list-item>
+                            <a mat-list-icon><mat-icon>check_circle_outline</mat-icon></a>
+                            <div mat-line>John Smith</div>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <a mat-list-icon><mat-icon>check_circle_outline</mat-icon></a>
+                            <div mat-line>William Brown</div>
+                        </mat-list-item>
+                    </mat-list>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="my-card p-4 mt-3">
+        <mat-card-title>Zoom calls</mat-card-title>
+        <div class="d-flex">
+            <div class="col-4">
+                <mat-list>
+                    <div mat-subheader>Schedule</div>
+                    <mat-list-item>
+                        <mat-icon mat-list-icon>schedule</mat-icon>
+                        <h5 mat-line>09:00</h5>
+                        <div mat-line>John Smith</div>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <mat-icon mat-list-icon>schedule</mat-icon>
+                        <h5 mat-line>10:00</h5>
+                        <div mat-line>William Brown</div>
+                    </mat-list-item>
+                </mat-list>
+            </div>
+            <div class="col-4 ml-2">
+
+                <mat-list>
+                    <div mat-subheader>Requests</div>
+                    <mat-list-item>
+                        <mat-icon mat-list-icon>calendar_today</mat-icon>
+                        <h5 mat-line>11:00</h5>
+                        <div mat-line>John Smith</div>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <mat-icon mat-list-icon>calendar_today</mat-icon>
+                        <h5 mat-line>12:00</h5>
+                        <div mat-line>William Brown</div>
+                    </mat-list-item>
+                </mat-list>
+            </div>
+            <div class="col-4 ml-2">
+                <mat-list>
+                    <div mat-subheader>Recent call</div>
+                    <mat-list-item>
+                        <mat-icon mat-list-icon>call</mat-icon>
+                        
+                        <div mat-line>John Smith</div>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <mat-icon mat-list-icon>call</mat-icon>
+                        
+                        <div mat-line>William Brown</div>
+                    </mat-list-item>
+                </mat-list>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<app-footer></app-footer>

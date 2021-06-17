@@ -1,0 +1,45 @@
+.header{
+    .img-container{
+        width: 100%;
+        
+    }
+    img{
+        max-width: 75%;
+        max-height: 75%;
+    }
+    button{
+        width: 50%;
+    }
+    .desc{
+        position: relative;
+        margin-top: 20%;
+        
+    }
+}
+
+.presentation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    div{
+        background-color: #B7BBE5;
+        padding: 1em;
+    }
+
+    h3{
+        color: white;
+    }
+    a{
+        cursor: pointer;
+        color: #8860D0;
+        font-size: 1.3em!important;
+        span{
+            color: white;
+        }
+    }
+}
+h4{
+    color: #2CB1EB;
+}
+
+

@@ -1,0 +1,51 @@
+<app-menu-to-logout></app-menu-to-logout>
+<div class="page grid">
+    <div class="bloc h-100">
+        <h2>Journal Entries</h2>
+        <div>
+            <h3>Private</h3>
+            <mat-list>
+                <mat-list-item>
+                  <mat-icon mat-list-icon>vpn_key</mat-icon>
+                  <p mat-line>Journal 1</p>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>vpn_key</mat-icon>
+                    <p mat-line>Journal 2</p>
+                  </mat-list-item>
+              </mat-list>
+        </div>
+        <div>
+            <h3>Public</h3>
+            <mat-list>
+                <mat-list-item>
+                  <mat-icon mat-list-icon>public</mat-icon>
+                  <p mat-line>Journal 1</p>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>public</mat-icon>
+                    <p mat-line>Journal 2</p>
+                  </mat-list-item>
+              </mat-list>
+        </div>
+    </div>
+    <div>
+        <div class="bloc mb-4">
+            <h2>Wellness Monitor</h2>
+            <div class="mb-5">Emotional rating</div>
+        </div>
+        <div class="bloc">
+            <h2>Notepad</h2>
+            <div class="d-flex justify-content-end p-2">
+                <mat-form-field class="w-100">
+                    <input matInput maxlength="256" placeholder="Write your note here...">
+                  </mat-form-field>
+                  <button mat-icon-button>
+                    <mat-icon>send</mat-icon>
+                  </button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<app-footer></app-footer>

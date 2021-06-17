@@ -1,0 +1,34 @@
+<app-menu-to-login></app-menu-to-login>
+
+<div class="page d-flex justify-content-center p-2">
+    <div class="login col-12 d-flex flex-column align-items-center">
+        <div class="mt-5">
+            <h1>Log in to FABnosed</h1>
+        </div>
+        <div class="col-6">
+            <a routerLink="/dashboard" class="apple-login w-100">Log in with Apple</a>
+        </div>
+        <div class="col-6">
+            <a class="fb-login w-100" routerLink="/dashboard">Log in with Facebook</a>
+        </div>
+        <div>or log in with your email: </div>
+        <div class="col-6">
+            <label>Email address</label>
+            <input type="text" class="w-100 white-input">
+        </div>
+        <div class="col-6">
+            <label class="">Password</label>
+            <input type="text" class="w-100 white-input">
+        </div>
+        <div class="col-6">
+            <a routerLink="/dashboard" class="primary-button w-100" >Login</a>
+        </div>
+        <div class="col-6 mb-5">
+            <span>
+                <a class="secondary-button w-100" routerLink="#">New to FABnosed? Sign up</a> 
+            </span>
+        </div>
+    </div>
+    
+</div>
+<app-footer></app-footer>

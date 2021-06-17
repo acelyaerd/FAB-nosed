@@ -1,0 +1,114 @@
+<app-menu-to-logout></app-menu-to-logout>
+<div class="page mb-5">
+    <div class="bloc-container">
+        <div class="bloc">
+            <h4>Notifications</h4>
+            <mat-list>
+                <mat-list-item>
+                    <mat-icon mat-list-icon matBadge="2" matBadgeColor="warn">message</mat-icon>
+                    <a routerLink="/chat" mat-line>Messages</a>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon matBadge="1" matBadgeColor="warn">call</mat-icon>
+                    <a routerLink="/zoom" mat-line>Zoom Calls</a>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon matBadge="3" matBadgeColor="warn">group_add</mat-icon>
+                    <a routerLink="/notification" mat-line>Contact requests</a>
+                </mat-list-item>
+            </mat-list>
+        </div>
+        <div class="bloc">
+            <h4>Schedules</h4>
+            <mat-list>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>list</mat-icon>
+                    <a routerLink="#" mat-line>To do list</a>
+                </mat-list-item>
+            </mat-list>
+        </div>
+        <div class="bloc">
+            <h4>Journal</h4>
+            <mat-list>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>message</mat-icon>
+                    <a routerLink="/chat" mat-line>Messages</a>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>call</mat-icon>
+                    <a routerLink="/zoom" mat-line>Zoom Calls</a>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>group_add</mat-icon>
+                    <a routerLink="/notification" mat-line>Contact requests</a>
+                </mat-list-item>
+            </mat-list>
+        </div>
+        <div class="bloc">
+            <h4>Network</h4>
+            <mat-list>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>person</mat-icon>
+                    <a routerLink="/myprofilereview" mat-line>My profile</a>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>people_outline</mat-icon>
+                    <a routerLink="/network" mat-line>Explore contacts</a>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>people_outline</mat-icon>
+                    <a routerLink="/network" mat-line>Network</a>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>book</mat-icon>
+                    <a routerLink="/contact" mat-line>My contacts</a>
+                </mat-list-item>
+            </mat-list>
+        </div>
+    </div>
+    <ejs-schedule height="400" class="mt-5"></ejs-schedule>
+    <div class="bloc-container mt-5">
+        <div class="bloc">
+            <h4>My Affirmations</h4>
+            <div class="d-flex justify-content-end p-2">
+                <mat-form-field class="w-100">
+                    <input matInput maxlength="256" placeholder="Write affirmations here...">
+                  </mat-form-field>
+                  <button mat-icon-button>
+                    <mat-icon>send</mat-icon>
+                  </button>
+            </div>
+        </div>
+        <div class="bloc">
+            <h4>My Notes</h4>
+            <div class="d-flex justify-content-end p-2">
+                <mat-form-field class="w-100">
+                    <input matInput maxlength="256" placeholder="Write your note here...">
+                  </mat-form-field>
+                  <button mat-icon-button>
+                    <mat-icon>send</mat-icon>
+                  </button>
+            </div>
+        </div>
+        <div class="bloc">
+            <h4>Upcoming</h4>
+            <mat-list>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>schedule</mat-icon>
+                    <div mat-line>Today</div>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>schedule</mat-icon>
+                    <div mat-line>Tomorrow</div>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>schedule</mat-icon>
+                    <div mat-line>This week</div>
+                </mat-list-item>
+            </mat-list>
+        </div>
+    </div>
+    <app-horizontal-list title="Saved Stories" [elements]="savedStories"></app-horizontal-list>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,11 @@
+<h4 class="mt-5">{{title}}</h4>
+<div class="timeline">
+
+    <div *ngFor="let element of elements;">
+        <div><img src="{{element.img}}"></div>
+        
+        <div><h6>{{element.title}}</h6></div>
+        <div><p>{{element.desc}}</p></div>
+        <div><a>{{element.action}}</a></div>
+    </div>
+</div>

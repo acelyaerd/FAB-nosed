@@ -1,0 +1,198 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+.page{
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
+}
+*{
+    font-family: "poppins";
+}
+body{
+    background-color: #f1f1f1!important;
+}
+
+.white-input{
+    border:none;
+    border-width: 1px;
+    border: 1px solid white;
+    background-color: transparent;
+    outline-color: white;
+}
+
+.primary-button{
+    background-color: #8860D0;
+    color: white;
+    outline-color: transparent;
+    border: none;
+}
+
+.secondary-button{
+    background-color: white;
+    color: black;
+    outline-color: transparent;
+    border: none;
+}
+
+button, a {
+    padding: 0.5em;
+    font-size: 0.7em!important;
+    text-align: center;
+    display: inline-block;
+}
+
+
+a:hover{
+    text-decoration: none!important;
+    cursor: pointer;
+}
+
+.timeline{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+    row-gap: 10px;
+    overflow-x: scroll;
+    div{
+        width: 200px;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+
+// Scrollbar
+.timeline::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.timeline::-webkit-scrollbar
+{
+	width: 5px;
+    height:10px;
+	background-color: #F5F5F5;
+}
+
+.timeline::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.3);
+	background-color: #8860D0;
+}
+
+
+
+
+.scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.scroll::-webkit-scrollbar
+{
+	width: 5px;
+    height:10px;
+	background-color: #F5F5F5;
+}
+
+.scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.3);
+	background-color: #8860D0;
+}
+
+// Menu
+.menu{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .menu-logo{
+        padding: 1em;
+        object-fit: contain;
+        width: 150px;
+    }
+    div{
+        display: flex;
+        justify-content: flex-end;
+        .menu-item{
+            padding: 1em;
+        }
+    }
+    a{
+        color: black;
+    }
+}
+
+// Bloc
+.bloc{
+    background-color: #B7BBE5;
+    padding: 1em;
+    border-radius: 30px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+    h4{
+        color: #8860D0;
+    }
+
+    li{
+        text-decoration: none;
+    }
+
+}
+
+.my-card{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)!important;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.background-primary{
+    background-color: #B7BBE5!important;
+}
+
+.background-gray{
+    background-color: #dcdcdc !important;
+}
+.bloc-container{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2em;
+}
+
+img{
+    max-width: 100%;
+}
+
+// Contacts 
+.contacts{
+    
+    max-height: 75vh!important;
+    overflow-y: scroll;
+    img{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+}
+
+.contact-review{
+    padding: 1em;
+    img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .inline{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

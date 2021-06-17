@@ -1,0 +1,42 @@
+<app-menu-to-login></app-menu-to-login>
+<div class="page">
+    <div class="header d-flex">
+        <div class="desc">
+            <h1>Best together</h1>
+            <p>A safe space to exchange support. Organize and discorver your journey with cancer</p>
+            <button class="primary-button">JOIN US</button>
+        </div>
+        <div class="img-container d-flex justify-content-center align-items-center">
+            <img src="assets/img/home.PNG" class="">
+        </div>
+        
+        
+    </div>
+    <div class="presentation">
+        <div>
+            <div><h3>Who we are</h3></div>
+            <div>1. Safe space</div>
+            <div>2. Platform to connect cancer patients and caregivers</div>
+            <div>3. Exchange of support and guidance</div>
+            <div>4. Inform readers</div>
+            <div>5. Lower mental distress levels</div>
+            <div><a>Explore <span>></span></a></div>
+            
+        </div>
+        <div>
+            <div><h3>What we offer</h3></div>
+            <div>1. Match & chat with patients / caregivers.</div>    
+            <div>2. Arrange Zoom Calls.</div>
+            <div>3. Dashboard for organisation and scheduling.</div>
+            <div>4. Journaling</div>
+            <div>5. Archive saved posts / moodboard.</div>
+            <div><a>Discorver <span>></span></a></div>
+        </div>
+    </div>
+    
+    <app-horizontal-list [elements]="stories" title="Top Stories"></app-horizontal-list>
+    <app-horizontal-list [elements]="categories" title="Top Categories"></app-horizontal-list>
+</div>
+<app-footer></app-footer>
+
+

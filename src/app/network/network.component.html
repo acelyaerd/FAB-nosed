@@ -1,0 +1,51 @@
+<app-menu-to-logout></app-menu-to-logout>
+
+<div class="page">
+    <div class="bloc desc my-card">
+        <div class="d-flex">
+            <div class="mr-3"><img src="assets/img/profile_picture.png"></div>
+            <div>
+                <div>John Smith</div>
+                <div class="ml-3">
+                    <h6>Description: </h6>
+                    <p>Age: 30</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="">Requests</div>
+        <div class="">
+            <div>Available Contacts</div>
+            <div class="contacts scroll">
+                <div *ngFor="let contact of availableContacts">
+                    <div class="d-flex  align-items-center">
+                        <img src={{contact.img}}>
+                        <div class="ml-4">
+                            <p>{{contact.name}}</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5">
+        <div class="list-profiles">
+            <div *ngFor="let profile of profiles" class="card-profil p-2 my-card" >
+                <div class="img">
+                    <img src={{profile.img}}>
+                </div>
+                <div class="name">
+                    <h4 class="text-center">{{profile.name}}</h4>
+                </div>
+                <div class="action d-flex justify-content-center">
+                    <a class="btn btn-primary" routerLink="/profilereview">View profile</a>
+                </div>
+                <div class="action d-flex justify-content-center my-2">
+                    <a class="btn btn-primary" routerLink="/profilereview">Send request</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

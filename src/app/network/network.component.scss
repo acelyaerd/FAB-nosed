@@ -1,0 +1,38 @@
+
+.list-profiles{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    row-gap: 50px;
+    
+    .card-profil{
+        margin: auto;
+        
+        width: 250px;
+        border-radius: 30px;
+        
+    
+    }
+}
+
+.desc{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    div{
+        justify-self: center;
+
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.contacts{
+    max-height: 20vh!important;
+    img{
+        height: 25px;
+        width: 25px;
+    }
+}

@@ -1,0 +1,14 @@
+.footer{
+    padding: 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #111111;
+    color: rgb(184, 182, 182);
+    h4{
+        color: #3A3A3A;
+    }
+
+    .fa{
+        font-size: 20px!important;
+    }
+}

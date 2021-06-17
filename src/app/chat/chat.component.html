@@ -1,0 +1,51 @@
+<app-menu-to-logout></app-menu-to-logout>
+<div class="page d-flex">
+    <div class="col-4 my-card mr-3 p-5">
+        <h4>Contacts</h4>
+        <div class="contacts scroll">
+            <div *ngFor="let contact of profiles">
+                <div class="d-flex  align-items-center">
+                    <img src={{contact.img}}>
+                    <div class="ml-4">
+                        <p>{{contact.name}}</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="col-8 my-card contact-review">
+        <div class="d-flex p-2 align-items-center">
+            <img src="assets/img/profile_picture.png">
+            <div class="ml-4">
+                <div>
+                    <h3>Hernandez Lopez</h3>
+                    <button class="btn btn-primary mr-2">Book Zoom Call</button>
+                    <button class="btn btn-primary">Book Voice Call</button>
+                </div>
+            </div>
+        </div>
+        <div class="messages mt-3">
+            <div class="d-flex mb-2">
+                <img src="assets/img/profile_picture.png" alt="" class="mr-3">
+                <span class="align-bottom background-gray message p-2 w-50">Hello</span>
+            </div>
+            <div class="d-flex mb-2">
+                <img src="assets/img/profile_picture.png" alt="" class="mr-3">
+                <span class="align-bottom background-gray message p-2 w-50">How are you?</span>
+            </div>
+            <div class="d-flex mb-2 justify-content-end">
+                <span class="align-bottom background-primary message p-2">Fine</span>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end p-2">
+            <mat-form-field class="w-100">
+                <input matInput maxlength="256" placeholder="Write your message here...">
+            </mat-form-field>
+            <button mat-icon-button>
+                <mat-icon>send</mat-icon>
+            </button>
+        </div>
+    </div>
+    </div>
+    <app-footer></app-footer>
